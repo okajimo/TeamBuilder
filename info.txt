@@ -1,0 +1,3 @@
+https://laravel.com/docs/5.8/eloquent#eloquent-model-conventions
+pular navn kan endres i modellen
+protected $table = 'my_flights';
