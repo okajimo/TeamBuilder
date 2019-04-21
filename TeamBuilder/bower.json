@@ -1,0 +1,17 @@
+{
+  "name": "TeamBuilder",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ivo <s305516@stud.hioa.no>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
