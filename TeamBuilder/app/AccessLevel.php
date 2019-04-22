@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AccessLevel extends Model
+class accesslevel extends Model
 {
-    //
+    protected $table = 'AccessLevel';
 }

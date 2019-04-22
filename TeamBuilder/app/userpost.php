@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Tittler extends Model
+class userpost extends Model
 {
-    //
+    private $table = 'userpost';
 }

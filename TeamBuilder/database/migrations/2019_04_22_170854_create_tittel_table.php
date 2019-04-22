@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateJoinLevelTable extends Migration
+class CreateTittelTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateJoinLevelTable extends Migration
      */
     public function up()
     {
-        Schema::create('join_level', function (Blueprint $table) {
+        Schema::create('tittler', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateJoinLevelTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('join_level');
+        Schema::dropIfExists('tittler');
     }
 }

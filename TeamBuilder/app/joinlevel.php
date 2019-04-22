@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User_posts extends Model
+class joinlevel extends Model
 {
-    //
+    private $table = 'joinlevel';
 }

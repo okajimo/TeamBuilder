@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Innlegg extends Model
+class innlegg extends Model
 {
-    //
+    protected $table = 'Innlegg';
 }
