@@ -14,7 +14,11 @@ class CreateInnleggsTable extends Migration
     public function up()
     {
         Schema::create('innlegg', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('Innlegg_ID');
+            $table->string('Tittle');
+            $table->string('Subject');
+            $table->string('Body');
+            $table->integer('UserPost_ID');
             $table->timestamps();
         });
     }

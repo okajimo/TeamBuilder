@@ -14,8 +14,8 @@ class CreatePostadressesTable extends Migration
     public function up()
     {
         Schema::create('Post', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('PostNR');
+            $table->string('PostNavn');
         });
     }
 

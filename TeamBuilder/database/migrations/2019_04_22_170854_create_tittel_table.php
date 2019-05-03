@@ -14,8 +14,9 @@ class CreateTittelTable extends Migration
     public function up()
     {
         Schema::create('tittler', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->increments('id');
+            $table->integer('Tittler');
+            $table->integer('Level');
         });
     }
 
