@@ -14,8 +14,10 @@ class CreateGruppesTable extends Migration
     public function up()
     {
         Schema::create('grupper', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->Increments('gruppe_ID');
+            $table->integer('gruppe_Navn');
+            $table->integer('område_ID');
+            $table->string('passord');
         });
     }
 

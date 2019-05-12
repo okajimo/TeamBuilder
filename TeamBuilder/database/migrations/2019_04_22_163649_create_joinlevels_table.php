@@ -14,8 +14,9 @@ class CreateJoinlevelsTable extends Migration
     public function up()
     {
         Schema::create('joinlevel', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->Increments('join_ID');
+            $table->integer('joinLevel');
+            $table->string('titel');
         });
     }
 

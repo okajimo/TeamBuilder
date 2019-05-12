@@ -14,11 +14,11 @@ class CreatePeopleTable extends Migration
     public function up()
     {
         Schema::create('person', function (Blueprint $table) {
-            $table->increments('Person_ID');
-            $table->string('Fornavn');
-            $table->string('Etternavn');
-            $table->string('Epost');
-            $table->integer('PostNr');
+            $table->increments('person_ID');
+            $table->string('fornavn');
+            $table->string('etternavn');
+            $table->string('epost');
+            $table->integer('postNr');
         });
     }
 

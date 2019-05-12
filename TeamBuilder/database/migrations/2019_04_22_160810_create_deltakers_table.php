@@ -14,7 +14,7 @@ class CreateDeltakersTable extends Migration
     public function up()
     {
         Schema::create('Deltaker', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->timestamps();
         });
     }

@@ -14,8 +14,11 @@ class CreateOmradesTable extends Migration
     public function up()
     {
         Schema::create('Omrader', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->Increments('område_ID');
+            $table->string('navn');
+            $table->string('passord');
+            $table->string('type');
+            $table->string('status');
         });
     }
 

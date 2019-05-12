@@ -14,8 +14,10 @@ class CreateMedlemmersTable extends Migration
     public function up()
     {
         Schema::create('Medlemmer', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->Increments('medlem_ID');
+            $table->integer('gruppe_ID');
+            $table->integer('joinLevel');
+            $table->integer('deltaker_ID');
         });
     }
 

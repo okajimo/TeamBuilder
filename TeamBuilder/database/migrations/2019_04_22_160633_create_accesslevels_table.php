@@ -14,9 +14,9 @@ class CreateAccesslevelsTable extends Migration
     public function up()
     {
         Schema::create('accesslevel', function (Blueprint $table) {
-            $table->increments('Acces_ID');
-            $table->integer('Level');
-            $table->string('Tittel');
+            $table->increments('acces_ID');
+            $table->integer('level');
+            $table->string('tittel');
         });
     }
 

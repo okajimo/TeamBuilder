@@ -13,12 +13,12 @@ class CreateInnleggsTable extends Migration
      */
     public function up()
     {
-        Schema::create('innlegg', function (Blueprint $table) {
-            $table->increments('Innlegg_ID');
-            $table->string('Tittle');
-            $table->string('Subject');
-            $table->string('Body');
-            $table->integer('UserPost_ID');
+        Schema::create('Innlegg', function (Blueprint $table) {
+            $table->increments('innlegg_ID');
+            $table->string('tittle');
+            $table->string('subject');
+            $table->string('body');
+            $table->integer('userPost_ID');
             $table->timestamps();
         });
     }

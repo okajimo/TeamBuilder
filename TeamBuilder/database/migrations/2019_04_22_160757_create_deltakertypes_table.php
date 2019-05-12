@@ -14,8 +14,9 @@ class CreateDeltakertypesTable extends Migration
     public function up()
     {
         Schema::create('deltakertype', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+            $table->Increments('type_ID');
+            $table->integer('deltaker_level');
+            $table->string('type');
         });
     }
 
