@@ -13,9 +13,15 @@ class CreatePostadressesTable extends Migration
      */
     public function up()
     {
-        Schema::create('Post', function (Blueprint $table) {
-            $table->increments('PostNR');
-            $table->string('PostNavn');
+        Schema::create('Postadresse', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->integer('postNr');
+            $table->string('postNavn');
+        });
+
+        Schema::table('Postadresse', function (Blueprint $table) {
+            $table->index('postNr');
+            $table->primary('postNr');
         });
     }
 
@@ -26,6 +32,6 @@ class CreatePostadressesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Post');
+        Schema::dropIfExists('Postadresse');
     }
 }

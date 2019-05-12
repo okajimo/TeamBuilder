@@ -14,6 +14,7 @@ class CreateJoinlevelsTable extends Migration
     public function up()
     {
         Schema::create('joinlevel', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->Increments('join_ID');
             $table->integer('joinLevel');
             $table->string('titel');

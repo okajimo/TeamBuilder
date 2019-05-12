@@ -14,6 +14,7 @@ class CreateInnleggsTable extends Migration
     public function up()
     {
         Schema::create('Innlegg', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('innlegg_ID');
             $table->string('tittle');
             $table->string('subject');

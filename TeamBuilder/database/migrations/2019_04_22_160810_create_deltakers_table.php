@@ -14,8 +14,12 @@ class CreateDeltakersTable extends Migration
     public function up()
     {
         Schema::create('Deltaker', function (Blueprint $table) {
-            $table->Increments('id');
-            $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->Increments('deltaker_ID');
+            $table->integer('user_ID');
+            $table->integer('område_ID');
+            $table->integer('deltaker_level');
+            $table->string('status');
         });
     }
 

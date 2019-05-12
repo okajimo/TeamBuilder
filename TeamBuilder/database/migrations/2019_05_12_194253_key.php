@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDeltakertypesTable extends Migration
+class Key extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateDeltakertypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('deltakertype', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->Increments('type_ID');
-            $table->integer('deltaker_level');
-            $table->string('type');
+        Schema::table('person', function(Blueprint $table) {
+            $table->foreign('postNr')
+                    ->references('postNr')
+                    ->on('Postadresse');
         });
     }
 
@@ -28,6 +27,6 @@ class CreateDeltakertypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('deltakertype');
+        //
     }
 }

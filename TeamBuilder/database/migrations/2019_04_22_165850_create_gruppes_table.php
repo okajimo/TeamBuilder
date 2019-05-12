@@ -14,6 +14,7 @@ class CreateGruppesTable extends Migration
     public function up()
     {
         Schema::create('grupper', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->Increments('gruppe_ID');
             $table->integer('gruppe_Navn');
             $table->integer('område_ID');

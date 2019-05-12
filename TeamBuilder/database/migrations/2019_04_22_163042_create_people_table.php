@@ -14,11 +14,16 @@ class CreatePeopleTable extends Migration
     public function up()
     {
         Schema::create('person', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('person_ID');
             $table->string('fornavn');
             $table->string('etternavn');
             $table->string('epost');
             $table->integer('postNr');
+        });
+        
+        Schema::table('person', function (Blueprint $table) {
+            $table->index('postNr');
         });
     }
 

@@ -14,6 +14,7 @@ class CreateMedlemmersTable extends Migration
     public function up()
     {
         Schema::create('Medlemmer', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->Increments('medlem_ID');
             $table->integer('gruppe_ID');
             $table->integer('joinLevel');

@@ -14,6 +14,7 @@ class CreateAccesslevelsTable extends Migration
     public function up()
     {
         Schema::create('accesslevel', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('acces_ID');
             $table->integer('level');
             $table->string('tittel');

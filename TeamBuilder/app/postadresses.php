@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class postadresse extends Model
 {
-    private $table = 'Post';
+    private $table = 'Postadresse';
 }
